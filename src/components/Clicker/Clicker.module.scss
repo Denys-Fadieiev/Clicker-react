@@ -1,0 +1,74 @@
+$color-liteBlue: rgb(16, 227, 250);
+// $color-lime: lime;
+$bc-dark-grey: rgb(61, 59, 59);
+
+%jc-center {
+  display: flex;
+  justify-content: center;
+}
+
+%jc-sp-evently_ai-center {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wrapperClickerper{
+  @extend %jc-center;
+  max-width: 900px;
+  margin: 80px auto;
+  border: solid $color-liteBlue 4px;
+  border-radius: 20px;
+  background-color: $bc-dark-grey;
+}
+
+.wrapperScreen{
+  @extend %jc-sp-evently_ai-center;
+  align-items: normal;
+  color: $color-liteBlue;
+  width: 350px;
+  height: 200px;
+  padding: 20px;
+}
+
+// .text{
+
+// }
+
+.screen{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.wrapperButtonsInput{
+  @extend %jc-sp-evently_ai-center;
+  width: 450px;
+  height: 200px;
+}
+
+.wrapperButtons{
+  @extend %jc-sp-evently_ai-center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.button, .inputs{
+  width: 130px;
+  padding: 10px 10px;
+  border: solid $color-liteBlue 2px;
+  color: $color-liteBlue;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: $color-liteBlue;
+  color: $bc-dark-grey;
+}
+
+.inputs{
+  text-align: left;
+}
+
